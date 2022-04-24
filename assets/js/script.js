@@ -57,7 +57,7 @@ function timeBlockColor() {
     let hour = moment().hours();
     let timeBlock = $(".time-block"); 
     for(let i = 0; i < timeBlock.length; i++) {
-        var currHour = parseInt($(timeBlock[i]).attr("id")); 
+        var currHour = parseInt($(timeBlock[i]).attr("id")) + 10; 
 
         if (currHour > hour) {
             $(timeBlock[i]).addClass("future");
