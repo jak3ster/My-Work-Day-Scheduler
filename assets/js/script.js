@@ -57,7 +57,7 @@ function timeBlockColor() {
     let hour = moment().hours();
     let timeBlock = $(".time-block"); 
     for(let i = 0; i < timeBlock.length; i++) {
-        var currHour = parseInt($(timeBlock[i]).attr("id")) - 10; 
+        var currHour = parseInt($(timeBlock[i]).attr("id")); // Add or minus 10 to simulate active work day
         console.log(currHour);
         if (currHour > hour) {
             $(timeBlock[i]).addClass("future");
